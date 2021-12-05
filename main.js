@@ -48,3 +48,10 @@ img.addEventListener("mouseenter", handleImage);
 
 img.addEventListener("mouseleave", handleImage2);
 // 👉 Listen to the mouseleave event on the img element and change the color of the h1 back to initial when the mouse cursor is then removed from the image.
+
+// ## Task 5 - Inline listener and toggle:
+// 👉 Add an event listener to the checkbox input that listens to the `change` event, and declare an inline function that toggles a class of `.funky` on and off of the `h1` element.
+let checkbox = document.querySelector("#check-box");
+checkbox.addEventListener("change", function () {
+  h1.classList.toggle("funky");
+});
